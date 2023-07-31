@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from "../dp.jpg";
+import Logo from "../DP.jpg";
 import ProgressBar from './ProgressBar';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import PersonOffIcon from '@mui/icons-material/PersonOff';
