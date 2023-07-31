@@ -30,7 +30,7 @@ const Card = () => {
                         Akshay Venu
                     </h3>
                     <p className='status-text'>
-                        2Hr ago
+                        2h ago
                     </p>
                 </div>
                 <p className='card-bio'>30 Yrs | 5'11" | Software Professional | Malayalam Vishwakarma | Bengaluru | Karnataka</p>
@@ -46,7 +46,7 @@ const Card = () => {
                     <button className='btn btn-success'>Accept</button>
                 </div>
             </div>
-        </div >
+        </div>
     );
 }
 
