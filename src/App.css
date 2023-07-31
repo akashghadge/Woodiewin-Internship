@@ -1,38 +1,195 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* header style */
+.header-div{
+  background: linear-gradient(to bottom, #800080, #7c007c);
+  color: white;
+  min-height: 120px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-purple
+{
+  font-family:Arial, Helvetica, sans-serif;
+  padding: 0.7rem 0.5rem;
+  color: white;
+  background-color: #800080;
+  border: solid 0.5px white;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.heading-text-div{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0.5rem 1.2rem;
+}
+.btn-purple:hover{
+  background-color: #9c04ca;
+  cursor: pointer;
+}
+.btn-group
+{
+  padding: 1rem 0rem 0.5rem 1rem;
   display: flex;
-  flex-direction: column;
+  justify-content: start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+
+
+/* card container */
+.card-container-div
+{
+  display: flex;
+  height: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+/* card style */
+.card
+{
+  width: 375px; /* Set a maximum width for the card */
+border-radius: 2rem;
+background-color: white;
+  margin: 1rem 0.3rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.card-img
+{
+  border-radius: 1rem 1rem 0rem 0rem;
+    height: auto;
+  width: 100%;
+  max-height: 350px;
+}
+.text-group
+{
+  padding: 1rem;
+}
+.d-flex-custom
+{
+  display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.btn-group-card
+{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.btn
+{
+  border-radius: 1.5rem;
+  font-size: large;
+  padding: 0.5rem 1rem;
+  min-width:140px;
+  background-color: white;
+  opacity: 0.6;
+}
+
+.btn-danger
+{
+  border: 1px solid red;
+  color: red;
+}
+.btn-success
+{
+  border: 1px solid green;
+  background-color: green;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card-bio
+{
+  margin: 0.5rem 0rem;
+  color: #000000c4;
+}
+.status-text
+{
+  border-radius: 1rem;
+  background-color: #f0f0f0;
+  color: black;
+  padding: 0.5rem 0.7rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* progress bar */
+.progress-container {
+  width: 100%; /* Set the width of the progress container */
+  background-color: #ddd; /* Background color of the container */
+  border-radius: 5px;
+  overflow: hidden; /* Hide overflow to clip the progress bar */
+}
+
+.progress-bar {
+  height: 5px; /* Set the height of the progress bar */
+  background-color: #4caf50; /* Progress bar color */
+  transition: width 0.3s ease-in-out; /* Optional: Add animation for a smooth transition */
+}
+
+.progress-caption
+{
+margin-bottom: 5px;
+}
+
+@media screen and (max-width: 600px) {
+.card:first-of-type
+{
+  margin-top: 0;
+}
+}
+
+
+/* image overlay */
+.img-container
+{
+  position: relative;
+}
+.text-overlay-1 {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  text-align: center;
+  color: black; /* Text color */
+  background-color: white; /* Background color and transparency */
+  padding: 0.8rem;
+  border-radius: 1rem 0rem 2rem 0rem;
+}
+.text-overlay-2 {
+  font-size: 12px;
+  position: absolute;
+  bottom: 10%;
+  right: 0%;
+  text-align: center;
+  color: black; /* Text color */
+  background-color: white; /* Background color and transparency */
+  padding: 0.5rem;
+  border-radius: 0.5rem 0rem 0rem 0.5rem;
+}
+.text-overlay-3 {
+  position: absolute;
+  top: 5%;
+  right: 0%;
+  text-align: center;
+  color: pink;
+  border-radius: 0.5rem 0rem 0rem 0.5rem;
+}
+.text-overlay-3>*{
+  width: 3rem!important;
+  height: 3rem !important;
+  border-radius: 0.8rem;
+  margin: 0rem 0.3rem;
+  background-color: rgba(255, 255, 255, 0.258); /* Background color and transparency */
+}
+.text-overlay-3 div{
+  display: inline;
+  margin-right: 1rem;
+}
+.more-class
+{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.205);
 }
